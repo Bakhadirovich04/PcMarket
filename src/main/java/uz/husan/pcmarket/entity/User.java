@@ -5,6 +5,7 @@ import uz.husan.pcmarket.entity.enums.Role;
 
 @Entity
 @Table(name = "users")
+
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -13,6 +14,7 @@ public class User {
     private String name;
     @Column(unique = true)
     private String email;
+    private String username;
 
     private String password;
 
